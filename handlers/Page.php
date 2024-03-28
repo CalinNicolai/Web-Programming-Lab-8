@@ -2,8 +2,9 @@
 
 class Page {
     /**
-     *  This function will display component that was transmitted by name of file in ./views/components
-     * @param string $name of component's file
+     * Display the component specified by the file name in the ./views/components directory.
+     *
+     * @param string $name The name of the component's file
      * @return void
      */
     public static function part($name) {
@@ -11,7 +12,7 @@ class Page {
         if(file_exists($path)) {
             include $path;
         } else {
-            echo "Компонент {$name} не найден";
+            echo "Component {$name} not found";
         }
     }
 }

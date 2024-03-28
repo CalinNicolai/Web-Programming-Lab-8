@@ -1,14 +1,15 @@
 <?php
-//Подключаем класс позволяющий выводить компоненты
+// Include the class that allows rendering components
 require_once("./handlers/Page.php");
 
-// Выводим компонент header
+// Render the header component
 Page::part("header");
-// Выводим компонент form
-Page::part("form");
-// Выводим компонент comments
-Page::part("comments");
-// Выводим компонент footer
-Page::part("footer");
 
-// Write this file but make all rounded corners
+// Render the form component
+Page::part("form");
+
+// Render the comments component
+Page::part("comments");
+
+// Render the footer component
+Page::part("footer");
